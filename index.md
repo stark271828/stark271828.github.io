@@ -27,7 +27,7 @@ sections: []
 - Decentralized Control of Modular Power Converters
 - Solid-State Protection and Grid-Support Technologies
 - Multi-Domain Modeling of Cyber-Physical Power Electronics Systems
-- hysics-Guided Data-Driven Condition Monitoring
+- Physics-Guided Data-Driven Condition Monitoring
 
 [Learn more about my research]({{ '/research/' | relative_url }})
 
