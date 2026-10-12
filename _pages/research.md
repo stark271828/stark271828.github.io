@@ -1,7 +1,7 @@
 ---
 title: Research
 permalink: /research/
-description: Resilient power electronics systems - a Ccornerstone of future power systems.
+description: Resilient power electronics systems - a cornerstone of future power systems.
 overview_figure:
   enabled: true
   path: "/assets/img/research_overview.svg"
