@@ -5,7 +5,7 @@ description: Resilient power electronics systems - a cornerstone of future power
 overview_figure:
   enabled: true
   path: "/assets/img/research_overview.svg"
-  alt: "Replace with a description of your research overview diagram"
+  alt: "Research overview diagram"
   caption: "Overview of modular power electronics systems and associated disturbances from cyber and physical domains."
   width: 75%
 ---

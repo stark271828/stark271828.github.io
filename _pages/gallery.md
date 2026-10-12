@@ -42,7 +42,7 @@ description: Moments from research groups, conferences, talks, collaborations, a
         loading="lazy">
     </a>
     <figcaption>
-      <strong>National Renewable Energy Laborotory (NREL)</strong>
+      <strong>National Renewable Energy Laboratory (NREL)</strong>
       <span>Golden, CO · December 2025</span>
       <span>Celebrating the holidays with the Integrated Devices and Systems (IDS) group.</span>
     </figcaption>
@@ -98,7 +98,7 @@ description: Moments from research groups, conferences, talks, collaborations, a
         loading="lazy">
     </a>
     <figcaption>
-      <strong>National Renewable Energy Laborotory (NREL)</strong>
+      <strong>National Renewable Energy Laboratory (NREL)</strong>
       <span>Golden, CO · August 2025</span>
       <span>Grateful to receive NREL’s Director’s Award for Exceptional Performance.</span>
     </figcaption>
@@ -112,7 +112,7 @@ description: Moments from research groups, conferences, talks, collaborations, a
         loading="lazy">
     </a>
     <figcaption>
-      <strong>National Renewable Energy Laborotory (NREL)</strong>
+      <strong>National Renewable Energy Laboratory (NREL)</strong>
       <span>Golden, CO · August 2025</span>
       <span>Sharing my research in three minutes at the DOE-sponsored Science-in-3 competition, honored to receive the Top Pitch Award at the NREL showcase.</span>
     </figcaption>
@@ -212,7 +212,7 @@ description: Moments from research groups, conferences, talks, collaborations, a
     <figcaption>
       <strong>2024 UNIFI Consortium General Meeting</strong>
       <span>Golden, CO · July 2024</span>
-      <span>Connecting with the UNIFI Consortiu and exchanging ideas on grid-forming inverters at the 2024 general meeting.</span>
+      <span>Connecting with the UNIFI Consortium and exchanging ideas on grid-forming inverters at the 2024 general meeting.</span>
     </figcaption>
   </figure>
 
@@ -224,7 +224,7 @@ description: Moments from research groups, conferences, talks, collaborations, a
         loading="lazy">
     </a>
     <figcaption>
-      <strong>National Renewable Energy Laborotory (NREL)</strong>
+      <strong>National Renewable Energy Laboratory (NREL)</strong>
       <span>Golden, CO · August 2023</span>
       <span>A moment from the graduate intern summer seminar at NREL.</span>
     </figcaption>
@@ -238,7 +238,7 @@ description: Moments from research groups, conferences, talks, collaborations, a
         loading="lazy">
     </a>
     <figcaption>
-      <strong>National Renewable Energy Laborotory (NREL)</strong>
+      <strong>National Renewable Energy Laboratory (NREL)</strong>
       <span>Golden, CO · August 2023</span>
       <span>My first holiday dinner with the Integrated Devices and Systems (IDS) group.</span>
     </figcaption>
