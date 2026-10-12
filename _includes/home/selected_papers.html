@@ -1,0 +1,6 @@
+<section class="home-section">
+  <h2>Selected publications</h2>
+  {% bibliography --query @*[selected=true] %}
+  <p class="editor-note">Add two to four representative papers to papers.bib and set selected = {true}. Add highlight = {Your short contribution summary} if desired.</p>
+  <a href="{{ '/publications/' | relative_url }}">All publications →</a>
+</section>

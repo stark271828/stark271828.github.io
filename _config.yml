@@ -1,0 +1,56 @@
+# Site identity and public links
+title: Bowen Yang
+description: "Academic profile in power electronics and power systems"
+lang: en
+url: "https://stark271828.github.io" # Before publishing: https://YOUR-USERNAME.github.io
+baseurl: "" # Empty for YOUR-USERNAME.github.io; /repository-name for a project site
+position: "Postdoctoral Researcher"
+affiliation: "National Laboratory of the Rockies, NLR"
+location: "Golden, CO, United States"
+email: "bowen.yang@nlr.gov"
+email_personal: "brianyang1995@outlook.com"
+google_scholar_url: "https://scholar.google.com/citations?user=bEZGJMwAAAAJ"
+linkedin_url: "https://www.linkedin.com/in/bowenyang95"
+orcid_url: "https://orcid.org/0000-0002-2117-5948"
+cv_pdf: "" # /assets/pdf/Bowen_Yang_CV.pdf after adding the file
+# Jekyll build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll/scholar
+include: [_pages]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - MAINTENANCE.md
+  - CONTENT_CHECKLIST.md
+  - THIRD_PARTY_NOTICES.md
+  - LICENSE
+  - vendor
+  - scripts
+  - .bundle
+  - .github
+  - _pages/people.md
+  - _pages/teaching.md
+  - _pages/openings.md
+  - _pages/contact.md
+  - _pages/news.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+# Bibliography rendering
+scholar:
+  style: "./_bibliography/ieee-full-authors.csl"
+  locale: en
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  sort_by: [year, month]
+  order: descending
+  group_by: none
+  group_order: descending
+  details_link: ""

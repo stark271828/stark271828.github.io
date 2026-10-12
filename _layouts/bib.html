@@ -1,0 +1,6 @@
+<div class="publication">
+  {{ reference | replace: 'B. Yang', '<strong>B. Yang</strong>' }}
+  {% if entry.doi %}<a href="https://doi.org/{{ entry.doi | escape }}">DOI</a>{% endif %}
+  {% if entry.pdf %}<a href="{{ entry.pdf | relative_url }}">PDF</a>{% endif %}
+  {% if entry.highlight %}<p class="publication-note">{{ entry.highlight | escape }}</p>{% endif %}
+</div>

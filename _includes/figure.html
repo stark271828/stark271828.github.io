@@ -1,0 +1,10 @@
+{% if include.enabled %}
+<figure class="figure" style="--figure-width: {{ include.width | default: '100%' }}">
+  {% if include.path and include.path != '' %}
+    <img src="{{ include.path | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy">
+  {% else %}
+    <div class="figure-placeholder">Optional figure<br><span>Add an image path, or set enabled to false.</span></div>
+  {% endif %}
+  {% if include.caption and include.caption != '' %}<figcaption>{{ include.caption | escape }}</figcaption>{% endif %}
+</figure>
+{% endif %}

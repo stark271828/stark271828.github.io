@@ -1,0 +1,23 @@
+- title: Home
+  url: /
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Projects
+  url: /projects/
+# - title: People
+#   url: /people/
+# - title: Teaching
+#   url: /teaching/
+# - title: News
+#   url: /news/
+# - title: Openings
+#   url: /openings/
+# - title: CV / Contact
+#   url: /contact/
+- title: Services
+  url: /services/
+
+- title: Gallery
+  url: /gallery/

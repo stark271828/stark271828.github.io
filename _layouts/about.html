@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<!-- Reduced adaptation of al-folio v0.14.0 _layouts/about.liquid. See THIRD_PARTY_NOTICES.md. -->
+<div class="post">
+  <header class="post-header home-heading">
+    <div class="home-heading-text">
+      <h1 class="post-title">{{ site.title | escape }}</h1>
+      <p class="desc">
+        {{ site.position | escape }}<br>
+        {{ site.affiliation | escape }}<br>
+        {{ site.location | escape }}<br>
+        <div class="email-row">
+          <span>
+            Work: <a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a>
+          </span>
+          <span>
+            Personal: <a href="mailto:{{ site.email_personal | escape }}">{{ site.email_personal | escape }}</a>
+          </span>
+        </div>
+      </p>
+
+      <div class="profile-links">
+        <a href="{{ site.google_scholar_url | escape }}"
+           aria-label="Google Scholar profile"
+           title="Google Scholar">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-7 9.5V17c0 2 3.13 4 7 4s7-2 7-4v-4.5l-7 3.82-7-3.82z"/>
+          </svg>
+        </a>
+
+        <a href="{{ site.linkedin_url | escape }}"
+           aria-label="LinkedIn profile"
+           title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2zM7.93 18.75H4.98V9.2h2.95v9.55zM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.98 0 3.58 1.96 3.58 4.5v5.27z"/>
+          </svg>
+        </a>
+        
+        <a href="{{ site.orcid_url | escape }}"
+           aria-label="ORCID profile"
+           title="ORCID">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="12"/>
+            <circle cx="6.5" cy="6.5" r="1" fill="white"/>
+            <path fill="white"
+                  d="M5.6 9h1.8v9H5.6z
+                     M9.5 6h4a6 6 0 0 1 0 12h-4z
+                     M11.3 7.7v8.6h2.2a4.3 4.3 0 0 0 0-8.6z"
+                  fill-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    {% if page.profile.enabled %}
+    <div class="heading-portrait" style="--profile-width: {{ page.profile.width | default: '220px' }}">
+      {% include figure.html enabled=true path=page.profile.image alt=page.profile.alt caption=page.profile.caption width='100%' %}
+    </div>
+    {% endif %}
+  </header>
+  <article>
+    <div class="clearfix">{{ content }}</div>
+    {% for section in page.sections %}
+      {% case section %}
+        {% when 'research' %}{% include home/research.html %}
+        {% when 'selected_papers' %}{% include home/selected_papers.html %}
+        {% when 'news' %}{% include home/news.html %}
+        {% when 'openings' %}{% include home/openings.html %}
+      {% endcase %}
+    {% endfor %}
+  </article>
+</div>

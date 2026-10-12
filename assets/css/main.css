@@ -1,0 +1,543 @@
+/* Lightweight local stylesheet for the reduced al-folio layout. */
+/* Design tokens and base styles */
+:root {
+  --accent: #8b255d;
+  --text: #25272c;
+  --muted: #656b73;
+  --border: #e4e5e8;
+  --max-width: 1040px;
+  --body-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font: var(--body-size)/1.7 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.container, .header-inner {
+  width: min(var(--max-width), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  padding-block: 22px;
+}
+
+/* Brand and primary navigation */
+.brand {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand strong {
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 8px 22px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding-bottom: 4px;
+}
+
+nav a[aria-current] {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Content typography and page spacing */
+main.container {
+  min-height: 65vh;
+  padding-block: 52px 70px;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  font-weight: 550;
+}
+
+h1 {
+  font-size: clamp(36px, 6vw, 48px);
+  letter-spacing: -1.5px;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 38px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 28px;
+}
+
+.desc {
+  color: var(--muted);
+  margin: 0;
+}
+
+.post-header {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 650;
+}
+
+/* Legacy portrait helpers and shared figures */
+.profile {
+  width: min(var(--profile-width), 45%);
+  margin-bottom: 24px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 36px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 36px;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.figure {
+  width: min(var(--figure-width), 100%);
+  margin: 24px auto;
+}
+
+.profile .figure {
+  margin: 0;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.figure-placeholder {
+  min-height: 210px;
+  border: 1px dashed #aaa5ad;
+  background: #f7f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.figure-placeholder span, figcaption {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+figcaption {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.editor-note {
+  color: #59565f;
+  background: #f8f7f9;
+  border-left: 3px solid #d4c6d0;
+  padding: 14px 18px;
+  font-size: 15px;
+}
+
+/* Reusable home sections, news, and publications */
+.home-section {
+  border-top: 1px solid var(--border);
+  margin-top: 34px;
+  padding-top: 6px;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.topic-grid a {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+time {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.bibliography {
+  padding-left: 24px;
+}
+
+.bibliography li {
+  margin-bottom: 24px;
+}
+
+.publication-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Footer, accessibility, and base responsive rules */
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  padding-block: 24px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -80px;
+  background: white;
+  padding: 10px;
+  z-index: 2;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@media (max-width: 600px) {
+  .container, .header-inner {
+    width: calc(100% - 32px);
+  }
+  main.container {
+    padding-top: 32px;
+  }
+  nav {
+    gap: 8px 16px;
+  }
+  .profile {
+    float: none;
+    width: min(var(--profile-width), 100%);
+    margin: 0 auto 28px;
+  }
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  nav, .skip-link {
+    display: none;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .container {
+    width: 100%;
+  }
+  .editor-note {
+    background: white;
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav {
+  margin-top: 0;
+}
+
+@media (max-width: 800px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
+
+/* Home title and quotation */
+h1.post-title {
+  font-weight: 700;
+}
+
+h1.post-title strong {
+  font-weight: 700;
+}
+
+.name-degree {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+
+.bio-quote {
+  margin: 20px 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Profile links and header portrait */
+.profile-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.profile-links a {
+  display: inline-flex;
+  color: var(--muted);
+}
+
+.profile-links a:hover {
+  color: var(--accent);
+}
+
+.profile-links svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.home-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.home-heading-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.heading-portrait {
+  flex: 0 0 var(--profile-width);
+  max-width: 35%;
+}
+
+.heading-portrait .figure {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .home-heading {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .heading-portrait {
+    flex: none;
+    width: min(var(--profile-width), 100%);
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
+/* Email row and text alignment */
+.email-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  color: var(--muted);
+}
+
+main p,
+main li {
+  text-align: justify;
+}
+
+/* Keep identity details, quotes, and captions left-aligned. */
+main .desc,
+main .bio-quote,
+main figcaption {
+  text-align: left;
+}
+
+/* Left alignment is easier to read on narrow screens. */
+@media (max-width: 600px) {
+  main p,
+  main li {
+    text-align: left;
+  }
+}
+
+/* Bibliography numbering and alignment */
+ol.bibliography {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ol.bibliography li,
+main .publication {
+  text-align: left;
+}
+
+/* Project cards */
+.project-list {
+  display: grid;
+  gap: 20px;
+}
+
+.project-card {
+  padding: 22px 26px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+
+.project-card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.project-card .project-subtitle {
+  margin: 0 0 14px;
+  font-style: italic;
+  text-align: left;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Navigation alignment overrides */
+.header-inner nav {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+/* Keep navigation left-aligned on smaller screens. */
+@media (max-width: 800px) {
+  .header-inner nav {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+/* Gallery cards and responsive columns */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.gallery-item a {
+  display: block;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-item figcaption {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.gallery-item figcaption strong {
+  display: block;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.gallery-item figcaption span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
