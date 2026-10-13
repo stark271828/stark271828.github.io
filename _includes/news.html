@@ -1,6 +1,24 @@
-{% assign items = site.data.news | sort: 'date' | reverse %}
+{% assign items = site.data.news %}
 {% if items.size > 0 %}
+{% if include.archive %}
+<div class="news-archive">
+{% assign previous_year = '' %}
+{% for item in items %}
+{% assign year = item.date | date: '%Y' %}
+{% if year != previous_year %}
+{% unless forloop.first %}</ul></section>{% endunless %}
+<section class="news-year" aria-labelledby="news-year-{{ year }}">
+  <h2 id="news-year-{{ year }}" class="news-year-heading">{{ year }}</h2>
+  <ul class="news-list news-archive-list">
+{% assign previous_year = year %}
+{% endif %}
+    <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %Y' }}</time><span>{{ item.text | escape }}{% if item.url and item.url != '' %} <a href="{{ item.url | relative_url }}">Details</a>{% endif %}</span></li>
+{% if forloop.last %}</ul></section>{% endif %}
+{% endfor %}
+</div>
+{% else %}
 <ul class="news-list">
 {% for item in items limit:include.limit %}<li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %Y' }}</time><span>{{ item.text | escape }}{% if item.url and item.url != '' %} <a href="{{ item.url | relative_url }}">Details</a>{% endif %}</span></li>{% endfor %}
 </ul>
+{% endif %}
 {% else %}<p class="editor-note">Add dated announcements for papers, awards, talks, or laboratory milestones in _data/news.yml.</p>{% endif %}

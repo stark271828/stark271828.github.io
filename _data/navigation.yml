@@ -10,14 +10,13 @@
 #   url: /people/
 # - title: Teaching
 #   url: /teaching/
-# - title: News
-#   url: /news/
 # - title: Openings
 #   url: /openings/
 # - title: CV / Contact
 #   url: /contact/
 - title: Services
   url: /services/
-
+- title: News
+  url: /news/
 - title: Gallery
   url: /gallery/

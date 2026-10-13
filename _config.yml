@@ -36,7 +36,6 @@ exclude:
   - _pages/teaching.md
   - _pages/openings.md
   - _pages/contact.md
-  - _pages/news.md
 defaults:
   - scope:
       path: ""

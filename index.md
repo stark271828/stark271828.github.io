@@ -29,17 +29,15 @@ sections: []
 - Multi-Domain Modeling of Cyber-Physical Power Electronics Systems
 - Physics-Guided Data-Driven Condition Monitoring
 
-[Learn more about my research]({{ '/research/' | relative_url }})
+[Research Topics]({{ '/research/' | relative_url }}) \| [Research Projects]({{ '/projects/' | relative_url }})
 
 --- 
 
-## Ongoing Projects
+## Latest News
 
-- Multi-Vendor Multiterminal HVDC Interoperability-Enhancing Scalable Solid-State Circuit Breaker
-- Universal Ultra-High-Density AC-DC Electrical Power Mover for the Future Intermodal Energy Superhighway (PowerMove)
-- Medium-Voltage Resource Integration Technologies (MERIT)
+{% include news.html limit=6 %}
 
-[Learn more about my projects]({{ '/projects/' | relative_url }})
+[All News]({{ '/news/' | relative_url }})
 
 ---
 

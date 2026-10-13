@@ -1,6 +1,6 @@
 ---
 title: News
 permalink: /news/
-description: Publications, awards, presentations, and research milestones
+description: Recent activities, achievements, and milestones.
 ---
-{% include news.html %}
+{% include news.html archive=true %}

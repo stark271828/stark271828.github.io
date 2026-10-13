@@ -217,6 +217,20 @@ description: Moments from research groups, conferences, talks, collaborations, a
   </figure>
 
   <figure class="gallery-item">
+    <a href="{{ '/assets/img/gallery/2023_nrel_ids_group.jpg' | relative_url }}">
+      <img
+        src="{{ '/assets/img/gallery/2023_nrel_ids_group.jpg' | relative_url }}"
+        alt="IDS_lunch_2023"
+        loading="lazy">
+    </a>
+    <figcaption>
+      <strong>National Renewable Energy Laboratory (NREL)</strong>
+      <span>Golden, CO · November 2023</span>
+      <span>My first holiday dinner with the Integrated Devices and Systems (IDS) group.</span>
+    </figcaption>
+  </figure>
+
+  <figure class="gallery-item">
     <a href="{{ '/assets/img/gallery/2023_nrel_intern.jpg' | relative_url }}">
       <img
         src="{{ '/assets/img/gallery/2023_nrel_intern.jpg' | relative_url }}"
@@ -227,20 +241,6 @@ description: Moments from research groups, conferences, talks, collaborations, a
       <strong>National Renewable Energy Laboratory (NREL)</strong>
       <span>Golden, CO · August 2023</span>
       <span>A moment from the graduate intern summer seminar at NREL.</span>
-    </figcaption>
-  </figure>
-
-  <figure class="gallery-item">
-    <a href="{{ '/assets/img/gallery/2023_nrel_ids_group.jpg' | relative_url }}">
-      <img
-        src="{{ '/assets/img/gallery/2023_nrel_ids_group.jpg' | relative_url }}"
-        alt="IDS_lunch_2023"
-        loading="lazy">
-    </a>
-    <figcaption>
-      <strong>National Renewable Energy Laboratory (NREL)</strong>
-      <span>Golden, CO · August 2023</span>
-      <span>My first holiday dinner with the Integrated Devices and Systems (IDS) group.</span>
     </figcaption>
   </figure>
 
