@@ -20,7 +20,65 @@ sections: []
 
 ---
 
+## Professional Appointments
+
+<div class="career-list">
+  <article class="career-entry">
+    <h3 class="career-title">Postdoctoral Researcher</h3>
+    <div class="career-date"><time datetime="2024-12">Dec 2024</time> – Present</div>
+    <div class="career-details">
+      <div class="career-institution">National Laboratory of the Rockies (NLR)</div>
+      <div>Power Systems Engineering Center</div>
+      <div class="career-location">Golden, Colorado, USA</div>
+    </div>
+  </article>
+  <article class="career-entry">
+    <h3 class="career-title">Research Intern</h3>
+    <div class="career-date"><time datetime="2023-03">Mar 2023</time> – <time datetime="2024-12">Dec 2024</time></div>
+    <div class="career-details">
+      <div class="career-institution">National Laboratory of the Rockies (NLR)</div>
+      <div>Power Systems Engineering Center</div>
+      <div class="career-location">Golden, Colorado, USA</div>
+    </div>
+  </article>
+  <article class="career-entry">
+    <h3 class="career-title">Research Assistant</h3>
+    <div class="career-date"><time datetime="2018-08">Aug 2018</time> – <time datetime="2023-05">May 2023</time></div>
+    <div class="career-details">
+      <div class="career-institution">The University of Georgia (UGA)</div>
+      <div>Intelligent Power Electronics and Electric Machine Laboratory</div>
+      <div class="career-location">Athens, Georgia, USA</div>
+    </div>
+  </article>
+</div>
+
+---
+
+## Education
+
+<div class="career-list">
+  <article class="career-entry">
+    <h3 class="career-title">Ph.D. in Electrical and Computer Engineering</h3>
+    <time class="career-date" datetime="2023">2023</time>
+    <div class="career-details">
+      <div class="career-institution">The University of Georgia</div>
+      <div class="career-location">Athens, Georgia, USA</div>
+    </div>
+  </article>
+  <article class="career-entry">
+    <h3 class="career-title">B.Sc. in Electrical Engineering</h3>
+    <time class="career-date" datetime="2018">2018</time>
+    <div class="career-details">
+      <div class="career-institution">Huazhong University of Science and Technology</div>
+      <div class="career-location">Wuhan, Hubei, China</div>
+    </div>
+  </article>
+</div>
+
+---
+
 ## Research Interests
+
 - Current-Limiting Control of Grid-Forming Inverters
 - Stability and Resilience of Heterogeneous Converter Networks
 - Power System Black Start and Restoration with Inverter-Based Resources
@@ -31,7 +89,7 @@ sections: []
 
 [Research Topics]({{ '/research/' | relative_url }}) \| [Research Projects]({{ '/projects/' | relative_url }})
 
---- 
+---
 
 ## Latest News
 
