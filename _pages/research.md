@@ -14,11 +14,11 @@ overview_figure:
 <p class="editor-note">Rapid growth in AI infrastructure, advanced manufacturing, electrified transportation systems, and increasingly diverse generation and energy-storage resources are reshaping how electrical energy is generated, transmitted, distributed, and consumed. These trends are driving unprecedented demand for flexible and reliable power conversion, making power electronics converters a critical enabling technology for future power systems. Yet the growing dependence on power electronics converters introduces a fundamental reliability challenge. Unlike conventional electromechanical systems, power electronics systems operate under strict semiconductor device constraints, increasingly modular hardware architectures, and deep dependence on sensing, communication, and digital control. Therefore, grid disturbances, component failures, and cyber anomalies can propagate rapidly across physical and cyber domains. A central scientific question is thus: <strong>How can future power electronics systems withstand diversified disturbances, maintain critical functionality, and autonomously recover from failures?</strong></p>
 
 {% include figure.html 
-   enabled=page.overview_figure.enabled 
-   path=page.overview_figure.path 
-   alt=page.overview_figure.alt 
-   caption=page.overview_figure.caption 
-   width=page.overview_figure.width 
+   enabled=page.overview_figure.enabled
+   path=page.overview_figure.path
+   alt=page.overview_figure.alt
+   caption=page.overview_figure.caption
+   width=page.overview_figure.width
 %}
 ---
 {% include figure.html
